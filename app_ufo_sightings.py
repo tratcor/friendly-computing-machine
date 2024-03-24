@@ -7,6 +7,7 @@ import plotly.express as px
 import pandas as pd
 
 app = dash.Dash(__name__)
+server=app.server
 
 #df = pd.read_csv('X:/Current/Dev/Python/Visualisation Sandbox/UFO Sightings/ufo_sightings_scrubbed_small.csv')
 df = pd.read_csv('X:/Current/Dev/Python/Visualisation Sandbox/UFO Sightings/ufo_sightings_scrubbed.csv', low_memory=False)
