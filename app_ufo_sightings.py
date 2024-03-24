@@ -10,7 +10,7 @@ app = dash.Dash(__name__)
 server=app.server
 
 #df = pd.read_csv('X:/Current/Dev/Python/Visualisation Sandbox/UFO Sightings/ufo_sightings_scrubbed_small.csv')
-df = pd.read_csv('X:/Current/Dev/Python/Visualisation Sandbox/UFO Sightings/ufo_sightings_scrubbed.csv', low_memory=False)
+df = pd.read_csv('ufo_sightings_scrubbed.csv', low_memory=False)
                  
 fig = px.pie(df, values='count', names='country', title='UFO per Country', color_discrete_sequence=px.colors.sequential.RdBu)
 fig.update_traces(textposition='inside', textinfo='percent+label')
