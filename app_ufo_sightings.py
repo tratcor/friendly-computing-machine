@@ -17,7 +17,7 @@ fig.update_traces(textposition='inside', textinfo='percent+label')
 
 app.layout = html.Div([
     dcc.Graph(
-        id='life-exp-vs-gdp',
+        id='ufo_per_country',
         figure=fig
     )
 ])
